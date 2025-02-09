@@ -1,0 +1,22 @@
+---
+import HeaderAside from "./HeaderAside.astro";
+---
+
+<aside class=`w-full md:w-[40%] min-h-screen relative z-10 ${Astro.props.class}`>
+    <section class="h-full rounded-xl p-6">
+        <section class="m-4 p-4">
+            <HeaderAside />
+            <main class="mt-7">
+                <small class="text-3xl mb-4 font-bold text-white">About</small>
+                <article class="mt-4 w-80">
+                    <p class="text-lg text-[#A2ABB8] justify-items-stretch">
+                        I am a software development technologist with one year of experience in various technologies.
+                        I'm curious, adaptable, and a fast learner, with expertise in application development and
+                        maintenance. I excel in teamwork, contributing innovative ideas, and supporting my colleagues'
+                        professional growth. I also have an intermediate level of English.
+                    </p>
+                </article>
+            </main>
+        </section>
+    </section>
+</aside>
