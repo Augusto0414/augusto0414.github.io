@@ -6,6 +6,7 @@ import svgr from 'vite-plugin-svgr';
 // https://astro.build/config
 export default defineConfig({
   integrations: [svelte()],
+  site: 'https://augusto0414.github.io',
   vite: {
     plugins: [tailwindcss(), svgr()]
   }
