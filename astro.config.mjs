@@ -9,8 +9,8 @@ import node from '@astrojs/node';
 export default defineConfig({
   integrations: [svelte()],
   site: 'https://augusto0414.github.io',
-  base: '/porfolio/',
-  output: 'server',
+  base: '/porfolio',
+  output: 'static',
   vite: {
     plugins: [tailwindcss(), svgr()]
   },
