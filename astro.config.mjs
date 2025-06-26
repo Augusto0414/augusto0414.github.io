@@ -2,7 +2,8 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 import svgr from 'vite-plugin-svgr';
-import node from '@astrojs/node';
+
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
@@ -12,7 +13,6 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss(), svgr()]
   },
-  adapter: node({
-    mode: 'standalone',
-  }),
+  adapter: vercel(),
+  output: 'server',
 });
