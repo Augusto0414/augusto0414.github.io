@@ -1,23 +1,39 @@
 ---
 import HeaderAside from "./HeaderAside.astro";
 import "../styles/global.css";
+import Experience from "./Experience.astro";
+import Tecnologies from "./Tecnologies.astro";
 ---
 
-<aside class=`w-full md:w-[40%] min-h-screen relative z-10 ${Astro.props.class}`>
-    <section class="h-full rounded-xl p-6">
-        <section class="m-4 p-4">
-            <HeaderAside />
-            <main class="mt-7">
-                <small class="text-3xl mb-4 font-bold text-white">About</small>
-                <article class="mt-4 w-80">
-                    <p class="text-lg text-[#A2ABB8] justify-items-stretch">
-                        I am a software development technologist with one year of experience in various technologies.
-                        I'm curious, adaptable, and a fast learner, with expertise in application development and
-                        maintenance. I excel in teamwork, contributing innovative ideas, and supporting my colleagues'
-                        professional growth. I also have an intermediate level of English.
-                    </p>
-                </article>
-            </main>
-        </section>
+<div class="flex flex-col md:flex-row w-full min-h-screen
+bg-gradient-to-br from-[#000000] via-[#0f172a] to-[#1e293b]">
+  <!-- Informcion sobre mi -->
+  <aside class={`w-full md:w-[40%] ${Astro.props.class}`}>
+    <section class="rounded-xl p-6">
+      <section class="m-4 p-4">
+        <HeaderAside />
+        <main class="mt-7">
+          <small class="text-3xl mb-4 font-bold text-white">Perfil</small>
+          <article class="mt-4 pr-2">
+            <p class="text-lg text-[#A2ABB8]">
+              Desarrollador Full Stack con experiencia en aplicaciones web y móviles, desde interfaces modernas hasta
+              APIs escalables. Manejo de tecnologías como React, Flutter, Node.js, Java y Python. Enfocado en crear
+              soluciones eficientes con buenas prácticas de desarrollo y metodologías ágiles como Scrum.
+            </p>
+          </article>
+          <!-- Tecnologias -->
+          <div class="flex items-center gap-4 mt-6">
+            <Tecnologies />
+          </div>
+        </main>
+      </section>
     </section>
-</aside>
+  </aside>
+
+  <!-- Experiencia laboral -->
+  <section class="w-full md:w-[60%] p-6">
+    <section class="m-4 p-4">
+      <Experience />
+    </section>
+  </section>
+</div>
