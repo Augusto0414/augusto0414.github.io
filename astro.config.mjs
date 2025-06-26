@@ -6,9 +6,9 @@ import node from '@astrojs/node';
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [svelte()],
   site: 'https://augusto0414.github.io',
-
+  base: 'porfolio',
+  integrations: [svelte()],
   vite: {
     plugins: [tailwindcss(), svgr()]
   },
