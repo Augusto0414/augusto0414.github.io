@@ -8,7 +8,7 @@ import node from '@astrojs/node';
 // https://astro.build/config
 export default defineConfig({
   integrations: [svelte()],
-  site: 'https://augusto0414.github.io',
+  site: 'https://augusto0414.github.io/porfolio',
   base: '/porfolio',
   output: 'static',
   outDir: './dist',
