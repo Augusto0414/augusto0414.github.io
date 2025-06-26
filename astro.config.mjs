@@ -11,6 +11,7 @@ export default defineConfig({
   site: 'https://augusto0414.github.io',
   base: '/porfolio',
   output: 'static',
+  outDir: './dist',
   vite: {
     plugins: [tailwindcss(), svgr()]
   },
