@@ -2,8 +2,8 @@ import { defineConfig } from 'astro/config';
 import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 import svgr from 'vite-plugin-svgr';
-import node from '@astrojs/node';
-import vercel from '@astrojs/vercel';
+// import vercel from '@astrojs/vercel';
+//import node from '@astrojs/node';
 
 
 // https://astro.build/config
@@ -24,11 +24,11 @@ export default defineConfig({
       }), svgr()
     ]
   },
-  adapter: vercel({
-    webAnalytics: {
-      enabled: true,
-    },
-  }),
+  // adapter: vercel({
+  //   webAnalytics: {
+  //     enabled: true,
+  //   },
+  // }),
   image: {
     service: {
       entrypoint: 'astro/assets/services/sharp',
