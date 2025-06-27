@@ -16,7 +16,17 @@ body {
     overflow-x: hidden;
 }
 
-@keyframes scroll {
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+@keyframes infinite-scroll {
     0% {
         transform: translateX(0%);
     }
@@ -26,10 +36,10 @@ body {
     }
 }
 
-.animate-scroll {
-    animation: scroll 20s linear infinite;
+.animate-infinite-scroll {
+    animation: infinite-scroll 60s linear infinite;
 }
 
-.animate-scroll:hover {
+.animate-infinite-scroll:hover {
     animation-play-state: paused;
 }
