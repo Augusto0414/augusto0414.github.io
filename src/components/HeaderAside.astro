@@ -5,6 +5,8 @@ import SocialPhill from "./SocialPhill.astro";
 import Email from "../icons/Email.astro";
 import Linkedin from "../icons/Linkedin.astro";
 import Github from "../icons/Github.astro";
+import CV from "../../public/pdf/CV.pdf";
+import Download from "../icons/Download.astro";
 ---
 
 <header>
@@ -29,6 +31,9 @@ import Github from "../icons/Github.astro";
         </SocialPhill>
         <SocialPhill href="https://github.com/Augusto0414">
           <Github />
+        </SocialPhill>
+        <SocialPhill href={CV} download>
+          <Download />
         </SocialPhill>
       </nav>
     </div>
